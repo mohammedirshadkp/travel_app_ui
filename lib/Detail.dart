@@ -118,11 +118,12 @@ class PlaceDetailsScreen extends StatelessWidget {
                                     .withOpacity(0.5), // Shadow color
                                 spreadRadius: 2, // Spread radius
                                 blurRadius: 5, // Blur radius
-                                offset: Offset(0, 2), // Offset to bottom right
+                                offset: const Offset(
+                                    0, 2), // Offset to bottom right
                               ),
                             ],
                           ),
-                          child: CircleAvatar(
+                          child: const CircleAvatar(
                             radius: 20,
                             backgroundColor: Colors.white,
                             child: Icon(

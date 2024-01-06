@@ -151,8 +151,8 @@ class _HomePageState extends State<HomePage> {
                     height: h * 0.02,
                   ),
                   Container(
-                    height: 30,
-                    width: 150,
+                    height: h * 0.035,
+                    width: w * 0.3,
                     color: Colors.white,
                     child: Align(
                       alignment: Alignment.center,
@@ -164,8 +164,6 @@ class _HomePageState extends State<HomePage> {
                             onTap: () {
                               setState(() {
                                 _selectedDotIndex = index;
-                                print(w.toString());
-                                print(h.toString());
                               });
                             },
                             child: Padding(
@@ -195,7 +193,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             Container(
-              height: 70,
+              height: h * 0.08,
               width: double.infinity,
               color: Colors.white,
               child: ListView.builder(
@@ -204,7 +202,8 @@ class _HomePageState extends State<HomePage> {
                 itemBuilder: (context, index) {
                   if (index == 0) {
                     return Padding(
-                      padding: EdgeInsets.only(left: 12, bottom: 16, top: 16),
+                      padding:
+                          const EdgeInsets.only(left: 12, bottom: 16, top: 16),
                       child: Container(
                         height: 10,
                         // width: 60,
@@ -213,7 +212,7 @@ class _HomePageState extends State<HomePage> {
                             borderRadius: BorderRadius.circular(7)),
                         child: Row(
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.local_fire_department_outlined,
                               color: Colors.white,
                             ),
@@ -234,11 +233,10 @@ class _HomePageState extends State<HomePage> {
                       padding:
                           const EdgeInsets.only(left: 12, bottom: 16, top: 16),
                       child: Container(
-                        height: 10,
-                        // width: 60,
+                        height: h * 085,
                         decoration: BoxDecoration(
                             color: Pallete.whiteColor,
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(color: Colors.grey, spreadRadius: 1)
                             ],
                             borderRadius: BorderRadius.circular(7)),
@@ -278,16 +276,16 @@ class _HomePageState extends State<HomePage> {
                       _navigateToPlaceDetails(context, dummyPlaces[index]);
                     },
                     child: Padding(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                           right: 20, bottom: 5, top: 20, left: 5),
                       child: Container(
                         decoration: BoxDecoration(
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               color: Colors.grey,
                               spreadRadius: 0,
                               blurRadius: 1,
-                              offset: const Offset(0, 1),
+                              offset: Offset(0, 1),
                             ),
                           ],
                           borderRadius: BorderRadius.circular(15),
@@ -312,8 +310,8 @@ class _HomePageState extends State<HomePage> {
                                           .Thumbnail, // Replace with your image source
                                       fit: BoxFit.cover,
                                       width: double.infinity,
-                                      height:
-                                          150, // Adjust the height as needed
+                                      // height:
+                                      //     150, // Adjust the height as needed
                                     ),
                                   ),
                                 ),
@@ -335,12 +333,12 @@ class _HomePageState extends State<HomePage> {
                                       radius: 15,
                                       backgroundColor: Colors.white30,
                                       child: like == false
-                                          ? Icon(
+                                          ? const Icon(
                                               Icons.favorite_border,
                                               color: Pallete
                                                   .whiteColor, // Replace with your place name
                                             )
-                                          : Icon(
+                                          : const Icon(
                                               Icons.favorite_outlined,
                                               color: Colors
                                                   .red, // Replace with your place name
@@ -351,12 +349,12 @@ class _HomePageState extends State<HomePage> {
                                   bottom: 0,
                                   child: Row(
                                     children: [
-                                      Icon(
+                                      const Icon(
                                         Icons.pin_drop,
                                         size: 10,
                                         color: Pallete.secondary,
                                       ),
-                                      SizedBox(width: 4),
+                                      const SizedBox(width: 4),
                                       Text(
                                         place
                                             .location, // Replace with your location
@@ -373,7 +371,7 @@ class _HomePageState extends State<HomePage> {
                                   bottom: 0,
                                   child: Row(
                                     children: [
-                                      Icon(
+                                      const Icon(
                                         Icons.star,
                                         size: 16,
                                         color: Pallete.secondary,
