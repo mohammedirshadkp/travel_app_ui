@@ -2,10 +2,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'core/constance.dart';
-import 'core/global_variables.dart';
-import 'core/pallete.dart';
-import 'model_class.dart';
+import '../model_class.dart';
+import '../core/constance.dart';
+import '../core/global_variables.dart';
+import '../core/pallete.dart';
 
 class PlaceDetailsScreen extends StatelessWidget {
   final Place place;

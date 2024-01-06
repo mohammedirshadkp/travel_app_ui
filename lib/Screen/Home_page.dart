@@ -5,10 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:travel_app_ui/core/pallete.dart';
-import 'core/constance.dart';
-import 'core/global_variables.dart';
-import 'model_class.dart';
-import 'detail.dart'; // Assuming you have the PlaceDetailsScreen in a file named detail.dart
+import '../model_class.dart';
+import '../core/constance.dart';
+import '../core/global_variables.dart';
+import '../detail.dart'; // Assuming you have the PlaceDetailsScreen in a file named detail.dart
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -406,7 +406,6 @@ class _HomePageState extends State<HomePage> {
 }
 
 void _navigateToPlaceDetails(BuildContext context, Place place) {
-  // Example: navigate to a details screen with place details
   Navigator.push(
     context,
     MaterialPageRoute(builder: (context) => PlaceDetailsScreen(place)),
