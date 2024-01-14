@@ -8,7 +8,7 @@ import 'package:travel_app_ui/core/pallete.dart';
 import '../model_class.dart';
 import '../core/constance.dart';
 import '../core/global_variables.dart';
-import '../detail.dart'; // Assuming you have the PlaceDetailsScreen in a file named detail.dart
+import 'Detail.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -243,7 +243,7 @@ class _HomePageState extends State<HomePage> {
                         child: Row(
                           children: [
                             Icon(
-                              categoryList[index]["icon"],
+                              categoryList[index]["ion"],
                               color: Colors.black,
                             ),
                             Text(
