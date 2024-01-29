@@ -243,7 +243,7 @@ class _HomePageState extends State<HomePage> {
                         child: Row(
                           children: [
                             Icon(
-                              categoryList[index]["icn"],
+                              categoryList[index]["ifcn"],
                               color: Colors.black,
                             ),
                             Text(
