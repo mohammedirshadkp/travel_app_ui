@@ -185,7 +185,7 @@ class PlaceDetailsScreen extends StatelessWidget {
                                   fontWeight: FontWeight.w400),
                             ),
                             Text(
-                              "3000 km",
+                              "300-0 km",
                               style: GoogleFonts.montserrat(
                                   color: Pallete.blackColor,
                                   fontSize: 10,
